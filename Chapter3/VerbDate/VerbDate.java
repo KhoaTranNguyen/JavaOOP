@@ -4,10 +4,11 @@ import java.util.*;
 
 public class VerbDate {
     static String getMonthString (int d, int m) {
-        int true_d;
+        int true_d = 0;
 
         if (m < 1 || m > 12) {
-            return "Error";
+            System.out.println("Error: month not valid");
+            System.exit(0);
         } else if (m == 2) {
             true_d = 28;
         } else if ((m <= 7 && m % 2 == 1) || (m >= 8 && m % 2 == 0)) {
@@ -17,7 +18,8 @@ public class VerbDate {
         }
         
         if (true_d != d && (d != 29 & m == 2)) {
-            return "Error";
+            System.out.println("Error: day & month mismatched");
+            System.exit(0);
         }
 
         String[] monthStrings = {
@@ -26,7 +28,7 @@ public class VerbDate {
             "September", "October", "November", "December"
         };
 
-        return (m < 1 || m > 12) ? "Error" : monthStrings[m-1];
+        return monthStrings[m-1];
     }
 
     static String getDayString (int d) {
@@ -39,7 +41,13 @@ public class VerbDate {
             "twenty-sixth", "twenty-seventh", "twenty-eighth", "twenty-ninth", "thirtieth",
             "thirty-first"
         };
-        return (d < 1 || d > 31) ? "Error" : dayStrings[d-1];
+
+        if (d < 1 || d > 31) {
+            System.out.println("Error: day not valid");
+            System.exit(0);  // thoát chương trình
+        }
+
+        return dayStrings[d-1];
     }
 
     public static void main(String[] args) {
