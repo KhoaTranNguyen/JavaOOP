@@ -18,7 +18,8 @@ class Person {
         weight = 0;
     }
 
-    Person(String name, String hairColor, String eyeColor, String skinColor, double height, double weight) {
+    Person(String name, String hairColor, String eyeColor,
+           String skinColor, double height, double weight) {
         System.out.println("Creating " + name + "\'s profile");
         this.name = name;
         this.hairColor = hairColor;

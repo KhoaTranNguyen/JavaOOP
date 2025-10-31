@@ -1,4 +1,3 @@
-package LangChain4J.src.main.java;
 import dev.langchain4j.model.openai.OpenAiChatModel;
 import dev.langchain4j.data.message.*;
 

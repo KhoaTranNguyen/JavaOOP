@@ -4,17 +4,14 @@ import java.util.*;
 
 public class DuplicateString {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        String s = sc.nextLine();
-        String arr[] = new String[s.length()];
+        String s = "helllllo";
+        String new_str = "";
 
         for (int i = 0; i < s.length(); i++) {
-            for (String part : arr) {
-                
-            }
+            String temp = String.valueOf(s.charAt(i));
+            new_str = new_str.contains(temp) ? new_str : new_str.concat(temp);
         }
 
-        sc.close();
+        System.out.println(new_str); // helo
     }
 }

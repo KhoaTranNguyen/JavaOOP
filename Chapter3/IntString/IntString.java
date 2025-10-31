@@ -1,4 +1,4 @@
-package Chapter3.IntString;
+// package Chapter3.IntString;
 
 import java.util.*;
 
@@ -38,10 +38,10 @@ public class IntString {
         Scanner sc = new Scanner(System.in);
         
         System.out.print("Type n: ");
-        int n = Integer.valueOf(sc.nextLine());
+        int n = 5; //Integer.valueOf(sc.nextLine());
 
         System.out.print("Type s: ");
-        String s = sc.nextLine();
+        String s = "abcdeknklancl";//sc.nextLine();
 
         n_equal_parts(s, n);
         n_char_substrings(s, n);

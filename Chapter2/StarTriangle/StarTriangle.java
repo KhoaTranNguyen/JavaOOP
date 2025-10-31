@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class StarTriangle {
     public static void main(String[] args) {
         int n = 10;
@@ -53,3 +55,26 @@ public class StarTriangle {
         }    
     }
 }
+
+/*
+*
+**
+* *
+*  *
+*   *
+*    *
+*     *
+*      *
+*       *
+**********
+         *
+        * *
+       *   *
+      *     *
+     *       *
+    *         *
+   *           *
+  *             *
+ *               *
+*******************
+ */
